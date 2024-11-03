@@ -209,7 +209,7 @@ def main():
     X_train_flat = []
     y_train_flat = []
     for _ in range(len(train_dataset)):
-        X_batch, y_batch = train_dataset.next()
+        X_batch, y_batch = next(train_dataset)
         X_train_flat.extend(X_batch.reshape(X_batch.shape[0], -1))
         y_train_flat.extend(y_batch)
     X_train_flat = np.array(X_train_flat)
@@ -220,7 +220,7 @@ def main():
     X_test_flat = []
     y_test_flat = []
     for _ in range(len(test_dataset)):
-        X_batch, y_batch = test_dataset.next()
+        X_batch, y_batch = next(test_dataset)
         X_test_flat.extend(X_batch.reshape(X_batch.shape[0], -1))
         y_test_flat.extend(y_batch)
     X_test_flat = np.array(X_test_flat)
