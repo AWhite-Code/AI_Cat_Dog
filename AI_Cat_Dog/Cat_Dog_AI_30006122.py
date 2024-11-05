@@ -13,6 +13,8 @@ from tensorflow.keras import layers, models
 from tensorflow.keras.callbacks import EarlyStopping
 import tensorflow as tf
 
+# GOOGLE COLAB NOTEBOOK: https://colab.research.google.com/drive/1Ia0j7Y5vh-lr4YcVpeMx06uB10vY_HlP#scrollTo=7mW4xaoAtMrT
+
 # Ensure the 'plots' directory exists for saving figures
 os.makedirs('plots', exist_ok=True)
 
